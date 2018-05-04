@@ -1,5 +1,20 @@
 {
+  "name": "filter-mock-loader",
+  "version": "1.0.0",
+  "description": "filter mock-api loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "loader-utils": "^1.1.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "webpack",
+    "mockapi",
+    "filter"
+  ],
+  "author": "zdzDesigner",
+  "license": "ISC"
 }
