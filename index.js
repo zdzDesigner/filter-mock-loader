@@ -6,7 +6,7 @@ module.exports = function (content, map, meta) {
     var optins =  getOptions(this);
     var bool = false;
     // console.log('getLoaderConfig: ',typeof optins.filter)
-    if(optins.filter && 'function' === typeof(optins.filter)){
+    if(optins && optins.filter && 'function' === typeof(optins.filter)){
         bool = optins.filter(content);
     }else{
         bool = ~content.indexOf('api.aispeech.com.cn');
