@@ -1,6 +1,6 @@
 {
   "name": "filter-mock-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "filter mock-api loader",
   "main": "index.js",
   "scripts": {

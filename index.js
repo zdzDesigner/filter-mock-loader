@@ -7,9 +7,9 @@ module.exports = function (content, map, meta) {
     var bool = false;
     // console.log('getLoaderConfig: ',typeof optins.filter)
     if(optins && optins.filter && 'function' === typeof(optins.filter)){
-        bool = optins.filter(content);
+        bool = optins.filter(this, content);
     }else{
-        bool = ~content.indexOf('api.aispeech.com.cn');
+        bool = ~this.resourcePath.indexOf('/model/api/config/');
     }
     if(bool){
         // console.log(content)    
