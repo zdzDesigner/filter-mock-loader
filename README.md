@@ -4,7 +4,7 @@
 ```js
 ...
 options:{
-    filter:function(source){
+    filter:function(loaderThisProperty, source){
         return ~source.indexOf('api.aispeech.com.cn') 
     }
 }
