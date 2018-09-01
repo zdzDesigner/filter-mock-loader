@@ -1,3 +1,4 @@
+var path = require('path');
 var { getOptions } = require('loader-utils');
 
 module.exports = function (content, map, meta) {
