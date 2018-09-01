@@ -9,7 +9,7 @@ module.exports = function (content, map, meta) {
     if(optins && optins.filter && 'function' === typeof(optins.filter)){
         bool = optins.filter(this, content);
     }else{
-        bool = ~this.resourcePath.indexOf('/model/api/config/');
+        bool = ~(this.resourcePath.split(path.sep).join('/')).indexOf('/model/api/config/');
     }
     if(bool){
         // console.log(content)    
